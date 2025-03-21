@@ -12,12 +12,12 @@ class SwiftOcr < Formula
 
   on_arm do
     url "https://github.com/azamara/swift-ocr-cli/releases/download/v1.0.0/swift-ocr-cli-arm-mac"
-    sha256 "6d0771d2b610c391a96210c7f17c90834b3707b3d989929a02c4e4320a168011"
+    sha256 "52dff0b119eec6de15be5a6b48dda8dbfd4d8b13f5735e8c9fca793f20d33430"
   end
   
   on_intel do
     url "https://github.com/azamara/swift-ocr-cli/releases/download/v1.0.0/swift-ocr-cli-intel-mac"
-    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+    sha256 "1d97ee5eef2d341cc844cec973aec73ce0ff28e620ba95486b85193a60bcdd14"
   end
 
   def install
