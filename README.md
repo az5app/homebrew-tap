@@ -21,6 +21,16 @@ brew install swift-ocr
 For instructions on how to verify the integrity of the downloaded binaries by checking their SHA-256 checksums, see:
 [Verify Checksum Guide](docs/verify-checksum.md)
 
+### Update the Tap
+
+To update the tap repository to get the latest formulae:
+
+```bash
+cd "$(brew --repo az5-dev/tap)"
+git pull
+cd -
+```
+
 Or if you want the latest development version:
 
 ```bash
