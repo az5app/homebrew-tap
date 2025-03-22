@@ -1,13 +1,13 @@
 # Homebrew Tap for Swift OCR CLI
 
-This repository contains [Homebrew](https://brew.sh) formulae for installing the [swift-ocr-cli](https://github.com/azamara/swift-ocr-cli) tool, an OCR (Optical Character Recognition) command-line interface built with Swift.
+This repository contains [Homebrew](https://brew.sh) formulae for installing the [swift-ocr-cli](https://github.com/az5-dev/swift-ocr-cli) tool, an OCR (Optical Character Recognition) command-line interface built with Swift.
 
 ## Installation
 
 ### Add the Tap
 
 ```bash
-brew tap azamara/tap
+brew tap az5-dev/tap
 ```
 
 ### Install swift-ocr
@@ -32,7 +32,7 @@ brew install --HEAD swift-ocr
 
 | Package | Description | Version | Platforms | License |
 |---------|-------------|---------|-----------|---------|
-| [swift-ocr](https://github.com/azamara/swift-ocr-cli) | OCR CLI tool built with Swift | 1.0.0 | Intel & Apple Silicon | Apache-2.0 |
+| [swift-ocr](https://github.com/az5-dev/swift-ocr-cli) | OCR CLI tool built with Swift | 1.0.0 | Intel & Apple Silicon | Apache-2.0 |
 
 ## License
 
@@ -59,7 +59,7 @@ This typically happens when the binary has been updated without changing the ver
 1. Untap the repository:
 
 ```bash
-brew untap azamara/tap
+brew untap az5-dev/tap
 ```
 
 2. Clear Homebrew's download cache:
@@ -71,7 +71,7 @@ brew cleanup
 3. Re-tap the repository:
 
 ```bash
-brew tap azamara/tap
+brew tap az5-dev/tap
 ```
 
 4. Install swift-ocr again:
