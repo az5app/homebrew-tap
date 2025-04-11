@@ -27,7 +27,7 @@ To update the tap repository to get the latest formulae:
 
 ```bash
 cd "$(brew --repo az5app/tap)"
-git pull
+git pull --rebase
 cd -
 ```
 
