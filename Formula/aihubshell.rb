@@ -1,10 +1,10 @@
 class Aihubshell < Formula
   desc "AIHub Korea API command-line interface for downloading AI datasets"
   homepage "https://github.com/az5app/aihubshell-kr"
-  url "https://github.com/az5app/aihubshell-kr/releases/download/v0.5/aihubshell-v0.5.tar.gz"
-  sha256 "e5882c636fb29d3a47f85e7ffcce0e83275b910ea66e0035b76cb07b2c40f0b9"
+  url "https://github.com/az5app/aihubshell-kr/releases/download/v0.5.1/aihubshell-v0.5.1.tar.gz"
+  sha256 "78f2e83f36c06beb7048844a2e4f8d20c5a303b929aa52708575ea1ea00d1988"
   license "MIT"
-  version "0.5"
+  version "0.5.1"
 
   livecheck do
     url :stable
