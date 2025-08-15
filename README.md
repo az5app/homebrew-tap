@@ -1,6 +1,6 @@
-# Homebrew Tap for Swift OCR CLI
+# az5app Homebrew Tap
 
-This repository contains [Homebrew](https://brew.sh) formulae for installing the [swift-ocr-cli](https://github.com/az5app/swift-ocr-cli) tool, an OCR (Optical Character Recognition) command-line interface built with Swift.
+This repository contains [Homebrew](https://brew.sh) formulae for installing various command-line tools developed by az5app, including OCR tools, VS Code extensions, and AI data management utilities.
 
 ## Installation
 
@@ -10,10 +10,29 @@ This repository contains [Homebrew](https://brew.sh) formulae for installing the
 brew tap az5app/tap
 ```
 
-### Install swift-ocr
+### Install Packages
 
+#### Swift OCR CLI
+An OCR (Optical Character Recognition) command-line tool built with Swift:
 ```bash
 brew install swift-ocr
+```
+
+#### VS Active Claude
+A Go CLI tool for VS Code Copilot extension modifications:
+```bash
+brew install vs-active-claude
+```
+
+#### AIHub Shell
+AIHub Korea API command-line interface for downloading AI datasets:
+```bash
+brew install aihubshell
+```
+
+For AIHub Shell, you'll need to set your API key:
+```bash
+export AIHUB_APIKEY="your-api-key-here"
 ```
 
 ### Verify Binary Integrity
@@ -31,10 +50,10 @@ git pull --rebase
 cd -
 ```
 
-Or if you want the latest development version:
+Or if you want the latest development version (available for swift-ocr and vs-active-claude):
 
 ```bash
-brew install --HEAD swift-ocr
+brew install --HEAD <formula-name>
 ```
 
 
@@ -43,6 +62,8 @@ brew install --HEAD swift-ocr
 | Package | Description | Version | Platforms | License |
 |---------|-------------|---------|-----------|---------|
 | [swift-ocr](https://github.com/az5app/swift-ocr-cli) | OCR CLI tool built with Swift | 1.0.0 | Intel & Apple Silicon | Apache-2.0 |
+| [vs-active-claude](https://github.com/az5app/vs-active-claude-public) | VS Code Copilot extension modifier | 1.0.0 | macOS (Intel & Apple Silicon), Linux (Intel & ARM) | Apache-2.0 |
+| [aihubshell](https://github.com/az5app/aihubshell-kr) | AIHub Korea API CLI for AI datasets | 0.5 | All platforms (requires bash & curl) | MIT |
 
 ## License
 
@@ -56,12 +77,12 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ### SHA256 Mismatch
 
-If you encounter a SHA256 mismatch error like the following:
+If you encounter a SHA256 mismatch error for any formula:
 
 ```
-Error: swift-ocr: SHA256 mismatch
-Expected: ff46e270279f16abb3f2527cd0db9e928ef63d27806621f4b41a5832e06d7d2c
-Actual: 559eb5c86d66c5c460af51809cceca1cd8571d5c5b4750aa9d96c1075e20c30c
+Error: <formula-name>: SHA256 mismatch
+Expected: <expected-hash>
+Actual: <actual-hash>
 ```
 
 This typically happens when the binary has been updated without changing the version number. To resolve this issue:
@@ -84,10 +105,10 @@ brew cleanup
 brew tap az5app/tap
 ```
 
-4. Install swift-ocr again:
+4. Install the formula again:
 
 ```bash
-brew install swift-ocr
+brew install <formula-name>
 ```
 
 If the issue persists, please check if there's a newer version of the formula or report the issue to the repository maintainers.
